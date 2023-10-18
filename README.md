@@ -13,16 +13,16 @@ The output of the final price should be rounded to a maximum of two decimal plac
 ### Data Collection
 1. Ask the user for the number of kilometers they want to travel;
 2. Ask the user the passenger's age;
-3. Calculate the ticket cost based on the distance to be traveled (€0.21/km).
-    - Apply a potential 20% discount to users under the age of 18.
-    - Apply a potential 40% discount to users aged 65 years or older. 
+3. Calculate the ticket price based on the distance to be traveled (€0.21/km).
+5. Need to apply a 20% discount to users under the age of 18.
+6. Need to apply a 40% discount to users aged 65 years or older. 
 
 ### Program Logic
 1. Set conditional statements based on the user's age:
-    - IF the user is 65 years of age or older, apply a 40% discount;
-    - ELSE IF he user is under 18 years of age, apply a 20% discount;
+    - IF the user is 65 years of age or older, apply a 40% discount to the ticket price;
+    - ELSE IF the user is under 18 years of age, apply a 20% discount to the ticket price;
     - ELSE the user pays the full ticket price.
-2. Calculate the total ticket price based on the kilometers to be traveled and the user's age;
+2. Calculate the total ticket price (based on the kilometers to be traveled and the user's potential discount);
 3. Set the final ticket price to a maximum of two decimal places to indicate cents on the price;
 4. Prepare the result message to be printed.
 
