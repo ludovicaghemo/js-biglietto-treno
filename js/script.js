@@ -27,7 +27,11 @@ if (userAge >= 65) {
 }
 
 // Prepare the result message to be printed
-const message = `We are pleased to inform you that the total price of your ticket is ${totalTicketPrice}€`; 
+const message = `
+<h3 id="ticket-price-result"> We are pleased to inform you that the total price of your ticket is: 
+<span class="text-success"> ${totalTicketPrice}€</span>!</h3>
+<p>Purchase it now before prices go up!</p>
+`; 
 console.log(message);
 
 // OUTPUT
