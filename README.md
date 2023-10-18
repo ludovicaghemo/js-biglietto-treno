@@ -12,8 +12,24 @@ The output of the final price should be rounded to a maximum of two decimal plac
 
 ### Data Collection
 1. Ask the user for the number of kilometers they want to travel;
+
+```
+const userDistance = parseInt(prompt("Hello user! Please enter the number of kilometers you will be traveling."));
+```
+
 2. Ask the user the passenger's age;
+
+```
+const userAge = parseInt(prompt("Great! Now please enter your age."));
+console.log(userDistance, userAge);
+```
+
 3. Calculate the ticket price based on the distance to be traveled (€0.21/km).
+
+```
+const ticketPrice = userDistance * 0.21;
+```
+
 5. Need to apply a 20% discount to users under the age of 18.
 6. Need to apply a 40% discount to users aged 65 years or older. 
 
@@ -24,7 +40,29 @@ The output of the final price should be rounded to a maximum of two decimal plac
     - ELSE the user pays the full ticket price.
 2. Calculate the total ticket price (based on the kilometers to be traveled and the user's potential discount);
 3. Set the final ticket price to a maximum of two decimal places to indicate cents on the price;
+
+```
+if (userAge >= 65) {
+    totalTicketPrice = (ticketPrice - (ticketPrice * 0.4)).toFixed(2);
+    console.log(totalTicketPrice);
+} else if (userAge < 18) {
+    totalTicketPrice = (ticketPrice - (ticketPrice * 0.2)).toFixed(2);
+    console.log(totalTicketPrice);
+} else {
+    totalTicketPrice = ticketPrice.toFixed(2); 
+    console.log(totalTicketPrice);
+}
+```
+
 4. Prepare the result message to be printed.
+
 
 ### Output
 Print the message to the page. 
+
+```
+document.getElementById("ticket-price-result").innerHTML = message;
+```
+
+### Preview
+![preview](img/preview.png)

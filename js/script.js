@@ -3,7 +3,6 @@
 // Ask the user for the number of kilometers and age
 const userDistance = parseInt(prompt("Hello user! Please enter the number of kilometers you will be traveling."));
 const userAge = parseInt(prompt("Great! Now please enter your age."));
-
 console.log(userDistance, userAge);
 
 // Calculate the ticket price
